@@ -12,7 +12,7 @@ services:
         image:          nginx
         container_name: mysvgfile
         volumes:
-            - ~/testingngnx/www:/usr/share/nginx/html
+            - ~/somesvgtest/www:/usr/share/nginx/html
         environment:
             - VIRTUAL_HOST=mysvgfile.local
 
