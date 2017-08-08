@@ -2,6 +2,8 @@
 
 This is a test repo showing that nginx-proxy does not set svg content-type, discussion on https://github.com/jwilder/nginx-proxy/issues/691
 
+Two services are started behind the proxy: first one serving svg from another nginx and the second serving it from a go server (that does not set content type).
+
 `docker-compose up --build ` will launch all services, `checksvgs.sh` will curl svg from different hosts showing content-type: 
 
 `curl -I -L -H "Host: mysvgfile.local" localhost/logo_interne1.svg` will show Content-Type: image/svg+xml because it is set by the inner nginx:
