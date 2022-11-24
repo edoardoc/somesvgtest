@@ -1,3 +1,4 @@
+# ARCHIVED
 # somesvgtest with docker and nginx proxy
 
 This is a test repo showing that nginx-proxy does not set svg content-type, discussion on https://github.com/jwilder/nginx-proxy/issues/691
